@@ -50,15 +50,25 @@ a {
 }
 
 /* --header--- */
-.header {
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 100vh;
     background: #e6f0ff;
 }
+.fixed-header {
+    position: sticky;
+    padding-top: 26px;
+    background: #e6f0ff;
+    top: -26px;
+    z-index: 1;
+}
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 .navbar ul {
     display: flex;
